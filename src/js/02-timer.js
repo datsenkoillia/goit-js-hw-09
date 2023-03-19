@@ -13,6 +13,7 @@ const refs = {
 // refs.startBtn.disabled = true;
 
 let timeOnClose = null;
+let timerId = null;
 
 const options = {
   enableTime: true,
