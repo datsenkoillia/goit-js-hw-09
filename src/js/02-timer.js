@@ -10,9 +10,9 @@ const refs = {
   secondsLeft: document.querySelector('[data-seconds]'),
 };
 
-refs.startBtn.disabled = true;
+// refs.startBtn.disabled = true;
 
-// let timeOnClose = null;
+let timeOnClose = null;
 
 const options = {
   enableTime: true,
