@@ -10,7 +10,7 @@ const refs = {
   secondsLeft: document.querySelector('[data-seconds]'),
 };
 
-// refs.startBtn.disabled = true;
+refs.startBtn.disabled = true;
 
 let timeOnClose = null;
 let timerId = null;
@@ -24,6 +24,7 @@ const options = {
     // console.log(selectedDates[0]);
     timeOnClose = selectedDates[0].getTime();
     fpOnClose();
+    changeTimer();
   },
 };
 
@@ -55,7 +56,7 @@ function changeTimer() {
 
   if (deltaMs <= 0) {
     clearInterval(timerId);
-    refs.startBtn.disabled = false;
+    refs.startBtn.disabled = true;
     return;
   }
 
